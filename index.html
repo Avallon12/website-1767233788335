@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.ascendancefoundry.com &#8211; Elite Mentors. Exponential Growth. AI First.</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS (Animate On Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #59657c;
+            background-color: #ffffff;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            color: #09071b;
+            font-weight: 500;
+        }
+        
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1920&auto=format&fit=crop');
+        }
+
+        .hero-mask {
+             background-image: url('https://www.ascendancefoundry.com/wp-content/uploads/2025/04/mask-intro-business-overlay.svg');
+             background-position: 27% 50%;
+             background-size: cover;
+        }
+        
+        .cta-bg {
+            background-image: url('https://www.ascendancefoundry.com/wp-content/uploads/2025/09/bottom_banner-2-1024x287.jpeg');
+        }
+
+        .nav-link-underline::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #3580f9;
+            transform: scaleX(0);
+            transform-origin: bottom left;
+            transition: transform 0.25s ease-out;
+        }
+
+        .nav-link-underline:hover::after {
+            transform: scaleX(1);
+        }
+        
+        .sticky-header {
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .is-pinned {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            box-shadow: 0px 0px 25px 0 rgba(24, 26, 61, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <header id="main-header" class="sticky top-0 z-50 w-full sticky-header">
+        <div class="max-w-[1300px] mx-auto px-[5.5vw]">
+            <div class="flex items-center justify-between h-[70px]">
+                <!-- Logo -->
+                <a href="#" class="flex-shrink-0">
+                    <img class="h-10 w-auto" src="https://www.ascendancefoundry.com/wp-content/uploads/2025/01/horizontal_dark_logo_retina.png" alt="Ascendance Foundry Logo">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-10">
+                    <a href="#" class="text-sm font-medium text-[#09071b] hover:text-[#3580f9] transition-colors relative nav-link-underline">Home</a>
+                    <a href="#" class="text-sm font-medium text-[#09071b] hover:text-[#3580f9] transition-colors relative nav-link-underline">Our Team</a>
+                    <a href="#" class="text-sm font-medium text-[#09071b] hover:text-[#3580f9] transition-colors relative nav-link-underline">Careers</a>
+                    <a href="#" class="text-sm font-medium text-[#09071b] hover:text-[#3580f9] transition-colors relative nav-link-underline">Contact</a>
+                    <a href="#" class="bg-[#3580f9] text-white text-sm font-medium px-5 py-2.5 rounded-md hover:bg-[#1c64d7] transition-colors">Apply Now</a>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="menu-button" class="text-[#09071b]">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white px-[5.5vw] py-4">
+            <a href="#" class="block text-sm font-medium text-[#09071b] py-2">Home</a>
+            <a href="#" class="block text-sm font-medium text-[#09071b] py-2">Our Team</a>
+            <a href="#" class="block text-sm font-medium text-[#09071b] py-2">Careers</a>
+            <a href="#" class="block text-sm font-medium text-[#09071b] py-2">Contact</a>
+            <a href="#" class="block w-full text-center mt-4 bg-[#3580f9] text-white text-sm font-medium px-5 py-2.5 rounded-md hover:bg-[#1c64d7] transition-colors">Apply Now</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-cover bg-center bg-[#181a3d] hero-bg">
+            <div class="hero-mask">
+                <div class="max-w-[1300px] mx-auto px-[5.5vw]">
+                    <div class="flex items-center min-h-[60vh] py-24 lg:py-32">
+                        <div class="max-w-xl">
+                            <h1 class="text-white text-4xl md:text-5xl font-medium leading-tight tracking-[-0.015em]" data-aos="slide-left" data-aos-duration="600" data-aos-delay="300">Talent And AI Training, Built Into Your Team</h1>
+                            <p class="mt-6 text-white text-lg md:text-xl" data-aos="slide-left" data-aos-duration="600" data-aos-delay="600">Fellowships pair a top student with your employee for AI training, mentorship, and project delivery.</p>
+                            <div class="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4" data-aos="fade-in" data-aos-duration="600" data-aos-delay="900">
+                                <a href="#" class="text-center text-white font-medium border-2 border-white rounded-md px-7 py-3 hover:bg-white hover:text-[#09071b] transition-all duration-300">Apply Now</a>
+                                <a href="#" class="text-center bg-[#3580f9] text-white font-medium rounded-md px-7 py-3 hover:bg-[#1c64d7] transition-colors">Work With Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is Ascendance Foundry? -->
+        <section class="bg-[#f4f7fa] py-20 lg:py-28">
+            <div class="max-w-[1300px] mx-auto px-[5.5vw]">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    <div data-aos="fade-up">
+                        <h2 class="text-3xl lg:text-4xl font-medium tracking-tight">What is Ascendance Foundry?</h2>
+                        <p class="mt-6 text-lg leading-relaxed">We pair high-potential university students with your employees for 1-on-1 mentorship. Your team members gain leadership experience and AI training, while our fellows get real-world experience. It's a win-win that drives innovation and growth.</p>
+                        <a href="#" class="mt-8 inline-block text-[#3580f9] font-medium hover:text-[#1c64d7] transition-colors">Learn More &rarr;</a>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://www.ascendancefoundry.com/wp-content/uploads/2025/09/what_is-1024x704.jpeg" alt="Team collaborating in an office" class="rounded-lg shadow-xl w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="relative py-20 lg:py-28 bg-white">
+            <div class="max-w-4xl mx-auto px-[5.5vw] text-center" data-aos="fade-up">
+                 <img src="https://www.ascendancefoundry.com/wp-content/uploads/2025/09/ian_quote-1.png" alt="Quote mark" class="mx-auto mb-6 h-12 w-auto">
+                <p class="text-2xl lg:text-3xl font-light text-[#59657c] leading-snug">"Ascendance has been a game-changer for our junior talent development. The structure, the quality of the fellows, and the AI focus are unparalleled."</p>
+                <p class="mt-8 font-semibold text-lg text-[#09071b]">Ian C., Engineering Manager</p>
+                <p class="text-base text-gray-500">Fortune 500 Tech Company</p>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="bg-white py-20 lg:py-28">
+            <div class="max-w-[1300px] mx-auto px-[5.5vw] text-center">
+                <h2 class="text-3xl lg:text-4xl font-medium tracking-tight" data-aos="fade-up">How It Works</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-[#59657c]" data-aos="fade-up" data-aos-delay="100">A streamlined process to integrate top talent and AI skills into your workflow.</p>
+                <div class="mt-16 grid md:grid-cols-3 gap-10 text-left">
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://www.ascendancefoundry.com/wp-content/uploads/2025/09/1.png" alt="Icon for Project Scoping" class="h-20 w-auto">
+                        <h3 class="mt-5 text-xl font-semibold">1. Project Scoping</h3>
+                        <p class="mt-2 text-base text-[#59657c]">We work with you to define a meaningful 12-week project. This ensures fellows contribute to real business goals while learning from your team.</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://www.ascendancefoundry.com/wp-content/uploads/2025/09/2.png" alt="Icon for Fellow Matching" class="h-20 w-auto">
+                        <h3 class="mt-5 text-xl font-semibold">2. Fellow Matching</h3>
+                        <p class="mt-2 text-base text-[#59657c]">Our rigorous vetting process selects the top 1% of student talent. We match you with a fellow whose skills and ambitions align with your project needs.</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <img src="https://www.ascendancefoundry.com/wp-content/uploads/2025/09/3-1024x771.png" alt="Icon for Execution & Growth" class="h-20 w-auto">
+                        <h3 class="mt-5 text-xl font-semibold">3. Execution & Growth</h3>
+                        <p class="mt-2 text-base text-[#59657c]">Fellows and mentors receive ongoing AI training and support. They execute the project, delivering tangible results and fostering a culture of innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="bg-[#f4f7fa] py-20 lg:py-28">
+            <div class="max-w-[1300px] mx-auto px-[5.5vw]">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    <div class="order-2 lg:order-1" data-aos="fade-up">
+                        <h2 class="text-3xl lg:text-4xl font-medium tracking-tight">Benefits for Your Business</h2>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check-circle text-[#00d084] mt-1 mr-3"></i>
+                                <span><strong>Cost-Effective Talent:</strong> Access top-tier, pre-vetted talent for specific projects without the overhead of a full-time hire.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check-circle text-[#00d084] mt-1 mr-3"></i>
+                                <span><strong>AI Upskilling:</strong> Your mentors receive cutting-edge AI training, keeping your team ahead of the curve.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check-circle text-[#00d084] mt-1 mr-3"></i>
+                                <span><strong>Leadership Development:</strong> Empower your employees to grow as leaders by mentoring the next generation of innovators.</span>
+                            </li>
+                             <li class="flex items-start">
+                                <i class="fa-solid fa-check-circle text-[#00d084] mt-1 mr-3"></i>
+                                <span><strong>Stronger Talent Pipeline:</strong> Build relationships with exceptional students, creating a direct pipeline for future recruitment.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 lg:order-2" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932&auto=format&fit=crop" alt="Business team discussing benefits" class="rounded-lg shadow-xl w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fellowship Tracks -->
+        <section class="bg-white py-20 lg:py-28">
+            <div class="max-w-[1300px] mx-auto px-[5.5vw] text-center">
+                <h2 class="text-3xl lg:text-4xl font-medium tracking-tight" data-aos="fade-up">Fellowship Tracks</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-[#59657c]" data-aos="fade-up" data-aos-delay="100">We offer specialized tracks to meet your specific business needs.</p>
+                <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="border border-gray-200 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-robot text-3xl text-[#3580f9]"></i>
+                        <h3 class="mt-4 text-xl font-semibold">AI Engineering</h3>
+                        <p class="mt-2 text-sm text-[#59657c]">Develop and deploy machine learning models, build AI-powered applications, and work with large language models (LLMs).</p>
+                    </div>
+                    <div class="border border-gray-200 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-chart-pie text-3xl text-[#3580f9]"></i>
+                        <h3 class="mt-4 text-xl font-semibold">Data Science & Analytics</h3>
+                        <p class="mt-2 text-sm text-[#59657c]">Extract insights from complex datasets, build predictive models, and create data visualizations to drive business decisions.</p>
+                    </div>
+                    <div class="border border-gray-200 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa-solid fa-pen-ruler text-3xl text-[#3580f9]"></i>
+                        <h3 class="mt-4 text-xl font-semibold">Product Management</h3>
+                        <p class="mt-2 text-sm text-[#59657c]">Define product strategy, conduct user research, and work with engineering teams to launch innovative AI features.</p>
+                    </div>
+                    <div class="border border-gray-200 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="500">
+                        <i class="fa-solid fa-lightbulb text-3xl text-[#3580f9]"></i>
+                        <h3 class="mt-4 text-xl font-semibold">Growth & Marketing</h3>
+                        <p class="mt-2 text-sm text-[#59657c]">Leverage data and AI tools to optimize marketing campaigns, analyze user behavior, and drive business growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="relative bg-cover bg-center cta-bg">
+            <div class="absolute inset-0 bg-[#003388] opacity-80"></div>
+            <div class="relative max-w-[1300px] mx-auto px-[5.5vw] py-20 lg:py-28 text-center text-white">
+                <h2 class="text-3xl lg:text-4xl font-medium" data-aos="fade-up">Ready to find your next top performer?</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg" data-aos="fade-up" data-aos-delay="100">Join leading companies in building the future of talent. Apply to become a fellow or partner with us to host a fellowship.</p>
+                <div class="mt-10" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#" class="bg-white text-[#3580f9] font-medium rounded-md px-8 py-4 hover:bg-gray-200 transition-colors">Apply to be a Fellow</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#181a3d] text-[#dde5f096]">
+        <div class="max-w-[1300px] mx-auto px-[5.5vw] py-16 lg:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Column 1: About -->
+                <div>
+                    <img class="h-8 w-auto mb-4" src="https://www.ascendancefoundry.com/wp-content/uploads/2025/01/horizontal_dark_logo_retina.png" alt="Ascendance Foundry Logo">
+                    <p class="text-sm leading-relaxed">We're an AI-first talent accelerator, connecting elite students with innovative companies for mentorship and exponential growth.</p>
+                </div>
+                
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Our Team</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Legal -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Us -->
+                <div>
+                     <h4 class="font-semibold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="mailto:hello@ascendancefoundry.com" class="hover:text-white transition-colors">hello@ascendancefoundry.com</a></li>
+                        <li><p>San Francisco, CA</p></li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-[#dde5f096] hover:text-white transition-colors"><i class="fab fa-linkedin-in text-lg"></i></a>
+                        <a href="#" class="text-[#dde5f096] hover:text-white transition-colors"><i class="fab fa-twitter text-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-[#dde5f024] text-center text-sm">
+                <p>&copy; 2024 Ascendance Foundry. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS (Animate On Scroll) Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 600,
+            easing: 'ease-out-sine',
+        });
+    </script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.getElementById('main-header');
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Sticky header shadow
+            const handleScroll = () => {
+                if (window.scrollY > 10) {
+                    header.classList.add('is-pinned');
+                } else {
+                    header.classList.remove('is-pinned');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+
+            // Mobile menu toggle
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
